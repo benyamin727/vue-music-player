@@ -19,17 +19,21 @@
 			<div class="album-art"></div><!--  /.album-art -->
 			<div class="vinyl"></div><!--  /.vinyl -->
 		</div><!--  /.album-art -->
-
+        <div>{{arr}}</div>
 	</div><!--  /.music-player -->
     </div>
 </template>
 
-<script>
+<script lang="ts">
+import { ref } from 'vue';
 export default {
-    setup () {
-        
 
-        return {}
+    setup () {
+        const arr = ref([1,2,3,4,5,6,7,8,9]);
+
+        return {
+            arr
+        }
     }
 }
 </script>
